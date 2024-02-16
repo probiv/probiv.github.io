@@ -24,7 +24,7 @@ ytextendedhtmlmeta:
   - default
 ytpostdatemeta:
   - default
-image: /wp-content/uploads/2023/11/6ba6294620e34ee89ce125214b222e02.jpeg
+image: 
 categories:
   - Боты
 tags:
