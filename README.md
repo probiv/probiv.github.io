@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Топ 5 лучших бота телеграм для пробива
 ---
 ![](https://raw.githubusercontent.com/probiv/probiv.github.io/master/images/bot_images.jpeg)
