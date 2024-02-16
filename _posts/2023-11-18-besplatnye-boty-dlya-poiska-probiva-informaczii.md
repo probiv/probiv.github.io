@@ -1,10 +1,7 @@
 ---
-id: 3427
 title: Бесплатные боты для поиска (пробива) информации.
 date: '2023-11-18T11:27:18+03:00'
-author: Geo
 layout: post
-guid: 'https://botiprobiva.ru/?p=3427'
 permalink: /besplatnye-boty-dlya-poiska-probiva-informaczii/
 ytrssenabled_meta_value:
   - 'no'
@@ -26,7 +23,7 @@ ytextendedhtmlmeta:
   - default
 ytpostdatemeta:
   - default
-image: /wp-content/uploads/2023/11/freebot1.jpeg
+image: https://raw.githubusercontent.com/probiv/probiv.github.io/master/images/freebot1.jpeg
 categories:
   - Боты
 tags:
