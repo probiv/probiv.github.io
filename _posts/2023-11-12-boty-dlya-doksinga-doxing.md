@@ -34,7 +34,7 @@ tags:
   - telegram
 ---
 
-![](https://github.com/probiv/probiv.github.io/blob/master/images/doxing_bot.jpeg)
+![](https://raw.githubusercontent.com/probiv/probiv.github.io/master/images/doxing_bot.jpeg)
 
 **«Доксинг» (doxing)** – это практика сбора и публикации личной информации о человеке без его согласия. Доксинг может включать в себя поиск данных о человеке, таких как полное имя, адрес, номера телефонов, адреса электронной почты, социальные медиа-профили и другую частную информацию.
 
