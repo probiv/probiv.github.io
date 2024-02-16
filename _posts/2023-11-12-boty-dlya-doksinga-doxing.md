@@ -1,10 +1,8 @@
 ---
-id: 2982
 title: Боты для доксинга (doxing)
 date: '2023-11-12T11:24:50+03:00'
-author: Geo
+author: botiprobiva
 layout: post
-guid: 'https://botiprobiva.ru/?p=2982'
 permalink: /boty-dlya-doksinga-doxing/
 ytrssenabled_meta_value:
   - 'no'
