@@ -1,39 +1,6 @@
 ---
 title: Бесплатные боты для поиска (пробива) информации.
-date: '2023-11-18T11:27:18+03:00'
 layout: post
-permalink: /besplatnye-boty-dlya-poiska-probiva-informaczii/
-ytrssenabled_meta_value:
-  - 'no'
-ytremove_meta_value:
-  - 'no'
-ytad1meta:
-  - enabled
-ytad2meta:
-  - enabled
-ytad3meta:
-  - enabled
-ytad4meta:
-  - enabled
-ytad5meta:
-  - enabled
-template_meta:
-  - 'no'
-ytextendedhtmlmeta:
-  - default
-ytpostdatemeta:
-  - default
-image: https://raw.githubusercontent.com/probiv/probiv.github.io/master/images/freebot1.jpeg
-categories:
-  - Боты
-tags:
-  - bot
-  - doxing
-  - telegram
-  - бесплатно
-  - боты
-  - пробив
-  - телеграм
 ---
 
 ![](https://raw.githubusercontent.com/probiv/probiv.github.io/master/images/freebot1.jpeg)
