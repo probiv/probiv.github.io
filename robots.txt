@@ -1,0 +1,3 @@
+Sitemap: https://botprobiva.pro/sitemap.xml
+User-agent: *
+Allow: 
