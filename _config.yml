@@ -6,7 +6,7 @@
 name: botiprobiva
 
 # Short bio or description (displayed in the header)
-description: Боты для пробива в информации
+description: Телеграм боты для пробива: Максимальная эффективность, результативность в решении OSINT задач и сбора персональной информации прямо в мессенджере Телеграм.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/probiv/probiv.github.io/master/images/bot_logo.png
