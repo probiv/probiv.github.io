@@ -3,7 +3,7 @@ title: Бесплатные боты для поиска (пробива) инф
 layout: post
 ---
 
-![](https://raw.githubusercontent.com/probiv/probiv.github.io/master/images/freebot1.jpeg)
+![](https://raw.githubusercontent.com/probiv/probiv.github.io/master/images/freebot1.webp)
 
 Боты пробива в мессенджере Telegram предоставляют широкий спектр функций, включая возможность поиска информации о человеке по номерам авто или телефона, ФИО, паспарту и многому другому. Сегодня мы расскажем вам только о **бесплатных ботах** для пробива и OSINTа информации. Для более мощного деанона доступны платные, **[тык сюда](https://probiv.github.io/top-5-luchshih-bota-telegram-dlya-probiva/)**.
 
