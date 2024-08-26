@@ -1,22 +1,61 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
 <url>
-<loc>https://botprobiva.com/</loc>
-<lastmod>2024-02-17T11:17:10+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://botprobiva.com/</loc>
+  <lastmod>2024-08-26T10:30:35+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://botprobiva.com/top-5-luchshih-bota-telegram-dlya-probiva/</loc>
-<lastmod>2024-02-17T11:17:10+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://botprobiva.com/top-5-luchshih-bota-telegram-dlya-probiva/</loc>
+  <lastmod>2024-08-26T10:30:35+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://botprobiva.com/besplatnye-boty-dlya-poiska-probiva-informaczii/</loc>
-<lastmod>2024-02-17T11:17:10+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://botprobiva.com/besplatnye-boty-dlya-poiska-probiva-informaczii/</loc>
+  <lastmod>2024-08-26T10:30:35+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://botprobiva.com/boty-dlya-doksinga-doxing/</loc>
-<lastmod>2024-02-17T11:17:10+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://botprobiva.com/boty-dlya-doksinga-doxing/</loc>
+  <lastmod>2024-08-26T10:30:35+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://botprobiva.com/usersbox/</loc>
+  <lastmod>2024-08-26T10:30:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://botprobiva.com/quick-osin/</loc>
+  <lastmod>2024-08-26T10:30:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://botprobiva.com/DoxbinBot/</loc>
+  <lastmod>2024-08-26T10:30:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://botprobiva.com/zernerda/</loc>
+  <lastmod>2024-08-26T10:30:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://botprobiva.com/HimeraSearch/</loc>
+  <lastmod>2024-08-26T10:30:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://botprobiva.com/LeakOSINT/</loc>
+  <lastmod>2024-08-26T10:30:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
