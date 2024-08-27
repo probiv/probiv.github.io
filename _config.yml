@@ -73,6 +73,7 @@ sass:
 # Use the following plug-ins
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Exclude these files from your production _site
 exclude:
