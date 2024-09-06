@@ -76,9 +76,9 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
  # - jekyll-seo-tag
- # - jekyll-github-metadata
- # - jekyll-paginate
- # - jekyll-relative-links
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-relative-links
 
 # Exclude these files from your production _site
 exclude:
