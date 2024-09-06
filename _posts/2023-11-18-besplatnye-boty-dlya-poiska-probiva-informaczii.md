@@ -1,6 +1,7 @@
 ---
 title: Бесплатные боты для поиска (пробива) информации.
 layout: post
+permalink: /besplatnye-boty-dlya-poiska-probiva-informaczii/
 ---
 
 ![](/images/freebot1.webp)
