@@ -73,17 +73,17 @@ sass:
 
 # Use the following plug-ins
 plugins:
- # - jekyll-feed
- # - jekyll-sitemap
- # - jekyll-seo-tag
- # - jekyll-github-metadata
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-github-metadata
   
   
 
 # Exclude these files from your production _site
 exclude:
- # - Gemfile
- # - Gemfile.lock
- # - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
   - README.md
   - CNAME
