@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 <head>
+     <link rel="canonical" href="{% if page.url == '/' %}{{ site.url }}{% else %}{{ site.url }}{{ page.url | replace:'index.html','' }}{% endif %}">
      <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
      {% include meta.html %}
    <!-- Yandex.Metrika counter -->
