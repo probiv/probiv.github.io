@@ -1,12 +1,13 @@
 #
 # This file contains configuration flags to customize your site
-#
+url: "https://botprobiva.com"
 
 # Name of your site (displayed in the header)
  name: botiprobiva
 
 # Short bio or description (displayed in the header)
  description: Лучшие боты для пробива информации!
+ 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
  avatar: /images/bot_logo.png
 # locale: ru-RU
