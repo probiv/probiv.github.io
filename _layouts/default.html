@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 <head>
+    {% if page.url =='/' %}{{site.url}}{% else %}{{page.url | absolute_url}}{% endif %}
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
      {% include meta.html %}
    <!-- Yandex.Metrika counter -->
