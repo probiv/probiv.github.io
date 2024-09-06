@@ -73,8 +73,8 @@ sass:
 
 # Use the following plug-ins
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
+ # - jekyll-feed
+ # - jekyll-sitemap
  # - jekyll-seo-tag
  # - jekyll-github-metadata
   
