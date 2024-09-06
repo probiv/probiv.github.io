@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Топ 5 лучших бота телеграм для пробива
+permalink: /top-5-luchshih-bota-telegram-dlya-probiva/
 ---
 ![](/images/bot_images.webp)
 
