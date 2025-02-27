@@ -25,6 +25,8 @@ permalink: /besplatnye-boty-dlya-poiska-probiva-informaczii/
 
 ### Список бесплатных ботов:
 
+**[getChatListBot](https://t.me/getchatlistbot)**: Показывает бесплатно, в каких группах состоит пользователь тг.
+
 **[SimilarFaces](https://t.me/similarfacesBot)**: Бот сервиса search4faces ищет людей в интернете по фотографии. Он покажет профиль VK, если найдет фото в профиле.
 
 **[CyberSec’s Bot](https://t.me/karma_cybersec_bot)**: поиск по имени, телефону, адресу, Telegram ID, электронной почте и другие интересные данные.
