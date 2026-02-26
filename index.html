@@ -1,57 +1,830 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Himera & Sherlock | Цифровые Детективы для Поиска Информации</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="yandex-verification" content="cd312fba67e51b18" />
-    <meta itemprop="description" name="description" content="Himera и Sherlock: Мощные Telegram-боты для поиска и анализа информации о людях, телефонах, автомобилях и социальных сетях. Аналог 'Глаза Бога' " />
-    <meta itemprop="keywords" name="keywords" content="поиск информации, Himera бот, Sherlock бот, пробив, глаз бога, поиск людей, поиск по номеру телефона, поиск по авто, анализ телеграм, анализ вконтакте, цифровой детектив, химера телеграм бот, пробив бот, химера сайт, himera search, химера серч, сайт химера, himera сайт, химера поиск, химера бот, himerasearch, himera-search, химера пробив, химера база данных, боты для поиска информации о человеке, eye of god, глаз бога" />
-    <meta name="author" content="Himera & Sherlock Team" />
-    <link rel="canonical" href="https://deanon.su/" /> 
+<html lang="ru" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пробив Серч — Himera Search, Sherlock, Funstat: боты для поиска и пробива информации о человеке</title>
+  <meta name="description" content="Probiv Search — более 9000 актуальных баз данных и 9 млрд записей. Пробить человека по ФИО, номеру телефона, email, ИНН, авто. Sherlock и Funstat — поиск по никнейму и анализ Telegram. Всё в одном боте, без регистрации.">
+  <meta name="keywords" content="химера серч, himera search, химера поиск, пробить человека, пробить номер телефона, поиск по фио, поиск по инн, химера бот, himerasearch, himera-search, химера пробив, химера база данных, sherlock бот телеграм, funstat telegram, осинт бот, osint бот, поиск информации телеграм, боты для поиска информации о человеке, пробивка по телефону, найти человека по номеру, поиск по email телеграм, пробить авто по гос номеру">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Himera Search">
+  <link rel="canonical" href="https://probiv.github.io/">
 
-    <!-- Open Graph Meta Tags (for social media sharing) -->
-    <meta property="og:title" content="Himera & Sherlock | Ваши Цифровые Детективы" />
-    <meta property="og:description" content="Мощные инструменты для поиска и анализа информации. Himera и Sherlock — ваш ключ к данным из открытых источников." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://deanon.su/" />
-    <meta property="og:image" content="https://deanon.su/assets/images/logo.svg" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Himera Search — пробить человека по ФИО, телефону, email, ИНН | Telegram бот">
+  <meta property="og:description" content="9000+ актуальных баз данных, 9 млрд записей. Himera Search, Sherlock, Funstat — профессиональные инструменты OSINT-поиска в Telegram.">
+  <meta property="og:url" content="https://probiv.github.io/">
+  <meta property="og:locale" content="ru_RU">
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Himera & Sherlock | Ваши Цифровые Детективы" />
-    <meta name="twitter:description" content="Мощные инструменты для поиска и анализа информации. Himera и Sherlock — ваш ключ к данным из открытых источников." />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
-    <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-    </style>
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="https://deanon.su/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://deanon.su/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://deanon.su/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" href="https://deanon.su/favicons/favicon.ico">
+  <link rel="manifest" href="https://deanon.su/site.webmanifest">
 
-<link rel="stylesheet" href="/index.css">
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
-    "react/": "https://esm.sh/react@^19.1.0/",
-    "react": "https://esm.sh/react@^19.1.0"
-  }
-}
-</script>
-  <script type="module" crossorigin src="/assets/index-BMlZVx8x.js"></script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Himera Search — пробить человека по телефону, ФИО, ИНН в Telegram">
+  <meta name="twitter:description" content="9000+ баз данных, 9 млрд записей. Поиск по телефону, ФИО, email, ИНН, авто. Результат за секунды.">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Himera Search — OSINT боты Telegram","url":"https://probiv.github.io/","description":"Профессиональные инструменты для поиска информации о людях по открытым источникам"},{"@type":"SoftwareApplication","name":"Himera Search","applicationCategory":"UtilitiesApplication","operatingSystem":"Telegram","description":"Более 9000 актуальных баз данных, 9 млрд записей. Поиск по ФИО, телефону, email, ИНН, авто.","offers":{"@type":"Offer","price":"0","priceCurrency":"RUB"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Как пробить человека по номеру телефона?","acceptedAnswer":{"@type":"Answer","text":"Откройте бота Himera Search (@HimeraNaitiBot) в Telegram, отправьте номер телефона в формате +7XXXXXXXXXX. Бот проверит его по 9000+ базам данных и вернёт ФИО, адреса, место работы, аккаунты в соцсетях и другую доступную информацию."}},{"@type":"Question","name":"Можно ли найти человека по ФИО и дате рождения?","acceptedAnswer":{"@type":"Answer","text":"Да, Himera Search поддерживает поиск по ФИО с датой рождения. Результат включает номера телефонов, адреса проживания, доходы, имущество, задолженности и информацию о правонарушениях."}},{"@type":"Question","name":"Что такое Sherlock бот в Telegram?","acceptedAnswer":{"@type":"Answer","text":"Sherlock (@not_sher_bot) — OSINT-бот для поиска информации по никнейму, номеру телефона и email. Проверяет 400+ платформ, анализирует утечки данных и строит перекрёстный анализ."}},{"@type":"Question","name":"Что показывает Funstat бот?","acceptedAnswer":{"@type":"Answer","text":"Funstat специализируется на анализе Telegram-аккаунтов: история имён и аватаров, сообщения из публичных чатов, время активности, данные об устройстве и биографическая информация профиля."}},{"@type":"Question","name":"Сколько баз данных у Himera Search?","acceptedAnswer":{"@type":"Answer","text":"Himera Search объединяет более 9000 актуальных баз данных с общим числом записей свыше 9 миллиардов."}},{"@type":"Question","name":"Можно ли пробить автомобиль по гос. номеру?","acceptedAnswer":{"@type":"Answer","text":"Да, Himera Search поддерживает поиск по государственному номеру и VIN автомобиля. Вы получите данные владельца, историю ДТП, информацию о нахождении в розыске и регистрации в ГИБДД."}}]}]}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <style>
+    :root {
+      --gold-300: #f5d483;
+      --gold-400: #e8b94a;
+      --gold-500: #c9922a;
+      --gold-600: #a8731a;
+      --ink:   #08090d;
+      --ink-2: #0f1118;
+      --ink-3: #161a25;
+      --surface:  rgba(255,255,255,0.032);
+      --border:   rgba(255,255,255,0.07);
+      --brgold:   rgba(200,146,42,0.28);
+      --text: #c4cedd;
+      --dim:  #586070;
+      --mut:  #3a4150;
+      --hc: #2dffc4;
+      --sc: #a78bfa;
+      --fc: #fb923c;
+      --r: 16px;
+      --rs: 10px;
+    }
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { background:var(--ink); color:var(--text); font-family:'Syne',sans-serif; overflow-x:hidden; }
+
+    body::before {
+      content:''; position:fixed; inset:0; z-index:0; pointer-events:none;
+      background:
+        radial-gradient(ellipse 70% 55% at 5% 0%, rgba(45,255,196,.045) 0%,transparent 60%),
+        radial-gradient(ellipse 55% 45% at 95% 100%,rgba(232,185,74,.05) 0%,transparent 55%),
+        radial-gradient(ellipse 40% 35% at 55% 50%, rgba(167,139,250,.025) 0%,transparent 55%);
+    }
+
+    /* NAV */
+    nav {
+      position:sticky; top:0; z-index:100;
+      padding:15px 40px;
+      display:flex; align-items:center; justify-content:space-between; gap:24px;
+      background:rgba(8,9,13,.9); backdrop-filter:blur(24px) saturate(1.5);
+      border-bottom:1px solid var(--border);
+    }
+    .nav-logo { font-family:'Cormorant Garamond',serif; font-size:1.3rem; font-weight:700; letter-spacing:.04em; color:var(--gold-300); text-decoration:none; white-space:nowrap; }
+    .nav-logo span { color:var(--dim); font-weight:300; }
+    .nav-links { display:flex; gap:28px; list-style:none; }
+    .nav-links a { font-family:'JetBrains Mono',monospace; font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; color:var(--dim); text-decoration:none; transition:color .2s; }
+    .nav-links a:hover { color:var(--gold-300); }
+    .nav-cta { font-family:'JetBrains Mono',monospace; font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; padding:8px 20px; border-radius:6px; border:1px solid var(--brgold); background:rgba(200,146,42,.08); color:var(--gold-400); text-decoration:none; transition:background .2s; white-space:nowrap; }
+    .nav-cta:hover { background:rgba(200,146,42,.18); }
+    @media(max-width:768px){ .nav-links,.nav-cta{display:none;} }
+
+    /* HERO */
+    .hero { position:relative; z-index:1; max-width:1280px; margin:0 auto; padding:48px 40px 0; text-align:center; }
+    .hero-kicker {
+      display:inline-flex; align-items:center; gap:10px;
+      font-family:'JetBrains Mono',monospace; font-size:.7rem; letter-spacing:.18em; text-transform:uppercase;
+      color:var(--gold-400); border:1px solid var(--brgold); background:rgba(200,146,42,.06);
+      padding:6px 16px; border-radius:40px; margin-bottom:20px;
+    }
+    .hero-kicker::before { content:''; width:5px; height:5px; border-radius:50%; background:var(--gold-400); box-shadow:0 0 8px var(--gold-400); animation:pulse 1.8s ease-in-out infinite; }
+    @keyframes pulse{ 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.3;transform:scale(.8)} }
+
+    h1.ht { font-family:'Cormorant Garamond',serif; font-size:clamp(2.2rem,5.5vw,5rem); font-weight:300; line-height:1.05; letter-spacing:-.01em; color:#fff; margin-bottom:14px; }
+    h1.ht strong { font-weight:700; background:linear-gradient(135deg,var(--gold-300) 0%,var(--gold-400) 40%,var(--gold-600) 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    h1.ht em { font-style:italic; color:rgba(255,255,255,.45); }
+
+    .hero-sub { font-size:.98rem; font-weight:400; line-height:1.75; color:var(--dim); max-width:620px; margin:0 auto 32px; }
+    .hero-sub strong { color:var(--text); }
+
+    /* BOT CARDS — compact strip above the fold */
+    .bs { position:relative; z-index:2; max-width:1280px; margin:0 auto; padding:0 40px 72px; }
+    .bg { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; }
+    @media(max-width:860px){ .bg { grid-template-columns:1fr; } }
+
+    .bc {
+      position:relative; border-radius:var(--r); border:1px solid var(--border);
+      background:var(--surface); backdrop-filter:blur(16px); padding:20px 22px 20px; overflow:hidden;
+      transition:transform .3s cubic-bezier(.16,1,.3,1), box-shadow .3s, border-color .3s;
+    }
+    .bc:hover { transform:translateY(-4px); }
+    .bc::after { content:''; position:absolute; width:180px; height:180px; border-radius:50%; filter:blur(65px); opacity:0; transition:opacity .4s; pointer-events:none; }
+    .bc:hover::after { opacity:.11; }
+
+    .bch { --bc:var(--hc); border-color:rgba(45,255,196,.14); }
+    .bcs { --bc:var(--sc); }
+    .bcf { --bc:var(--fc); }
+    .bch:hover { border-color:rgba(45,255,196,.42); box-shadow:0 8px 56px -12px rgba(45,255,196,.22),0 0 0 1px rgba(45,255,196,.08); }
+    .bcs:hover { border-color:rgba(167,139,250,.38); box-shadow:0 8px 56px -12px rgba(167,139,250,.18); }
+    .bcf:hover { border-color:rgba(251,146,60,.38); box-shadow:0 8px 56px -12px rgba(251,146,60,.18); }
+    .bch::after { background:var(--hc); top:-50px; right:-50px; }
+    .bcs::after { background:var(--sc); bottom:-50px; left:-50px; }
+    .bcf::after { background:var(--fc); top:-50px; left:-50px; }
+
+    .bc-bar { position:absolute; top:0; left:0; right:0; height:2px; background:var(--bc); opacity:.6; border-radius:var(--r) var(--r) 0 0; }
+    .bc-feat { position:absolute; top:14px; right:14px; font-family:'JetBrains Mono',monospace; font-size:.58rem; letter-spacing:.12em; text-transform:uppercase; padding:3px 8px; border-radius:3px; background:rgba(232,185,74,.08); border:1px solid var(--brgold); color:var(--gold-400); }
+
+    .bc-head { display:flex; align-items:center; gap:12px; margin-bottom:12px; }
+    .bc-ico { width:42px; height:42px; flex-shrink:0; border-radius:12px; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.07); display:grid; place-items:center; font-size:19px; }
+    .bc-name h3 { font-family:'Syne',sans-serif; font-size:1rem; font-weight:700; color:#fff; margin-bottom:1px; }
+    .bc-handle { font-family:'JetBrains Mono',monospace; font-size:.67rem; color:var(--bc); opacity:.8; }
+    .bc-desc { font-size:.83rem; line-height:1.65; color:var(--dim); margin-bottom:14px; }
+    .bc-tags { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:18px; }
+    .bc-tag { font-family:'JetBrains Mono',monospace; font-size:.58rem; letter-spacing:.06em; padding:3px 8px; border-radius:4px; background:rgba(255,255,255,.04); border:1px solid var(--border); color:var(--mut); }
+
+    .btg { display:flex; align-items:center; justify-content:center; gap:9px; width:100%; padding:13px 20px; border-radius:var(--rs); font-family:'Syne',sans-serif; font-size:.82rem; font-weight:700; text-decoration:none; border:1px solid var(--bc); color:var(--bc); background:rgba(255,255,255,.02); position:relative; overflow:hidden; transition:all .25s cubic-bezier(.16,1,.3,1); }
+    .btg::before { content:''; position:absolute; inset:0; background:var(--bc); opacity:0; transition:opacity .25s; }
+    .btg:hover::before { opacity:.09; }
+    .btg:hover { box-shadow:0 0 28px -4px var(--bc); transform:scale(1.02); }
+    .btg > * { position:relative; z-index:1; }
+    .btg svg { width:17px; height:17px; fill:currentColor; }
+
+    /* DIVIDER */
+    .gdiv { max-width:1280px; margin:0 auto; padding:0 40px; }
+    .gdiv hr { border:none; height:1px; background:linear-gradient(90deg,transparent,var(--brgold) 30%,var(--gold-500) 50%,var(--brgold) 70%,transparent); margin-bottom:80px; }
+
+    /* CONTENT WRAPPER */
+    .cw { max-width:1280px; margin:0 auto; padding:0 40px; position:relative; z-index:1; }
+
+    /* LABELS / TITLES */
+    .sl { font-family:'JetBrains Mono',monospace; font-size:.68rem; letter-spacing:.25em; text-transform:uppercase; color:var(--gold-400); margin-bottom:14px; display:flex; align-items:center; gap:12px; }
+    .sl::after { content:''; flex:1; height:1px; background:var(--border); }
+    .st { font-family:'Cormorant Garamond',serif; font-size:clamp(2rem,4vw,3.2rem); font-weight:600; line-height:1.15; color:#fff; margin-bottom:20px; }
+    .st em { font-style:italic; color:var(--gold-300); }
+    .sb { font-size:1rem; line-height:1.85; color:var(--dim); max-width:740px; }
+    .sb p { margin-bottom:18px; }
+    .sb strong { color:var(--text); font-weight:600; }
+
+    /* FEATURES */
+    .feats { margin-bottom:100px; }
+    .fh { margin-bottom:52px; }
+    .fg { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    @media(max-width:880px){ .fg{grid-template-columns:1fr 1fr;} }
+    @media(max-width:540px){ .fg{grid-template-columns:1fr;} }
+    .fi { border:1px solid var(--border); border-radius:var(--rs); background:var(--surface); padding:28px 24px; transition:border-color .3s,background .3s; }
+    .fi:hover { border-color:rgba(200,146,42,.28); background:rgba(200,146,42,.025); }
+    .fi-n { font-family:'Cormorant Garamond',serif; font-size:3.2rem; font-weight:300; line-height:1; color:rgba(200,146,42,.18); margin-bottom:12px; }
+    .fi-t { font-family:'Syne',sans-serif; font-size:.95rem; font-weight:700; color:#fff; margin-bottom:8px; }
+    .fi-d { font-size:.87rem; line-height:1.72; color:var(--dim); }
+
+    /* SEARCH TYPES */
+    .stypes { margin-bottom:100px; }
+    .sg { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:48px; }
+    @media(max-width:720px){ .sg{grid-template-columns:1fr;} }
+    .si { border:1px solid var(--border); border-radius:var(--rs); background:var(--surface); padding:28px 26px; transition:border-color .25s,background .25s; }
+    .si:hover { border-color:var(--brgold); background:rgba(200,146,42,.025); }
+    .si-head { display:flex; align-items:center; gap:14px; margin-bottom:14px; }
+    .si-em { font-size:1.8rem; }
+    .si-t { font-family:'Syne',sans-serif; font-size:1rem; font-weight:700; color:#fff; }
+    .si-ul { list-style:none; }
+    .si-ul li { font-size:.87rem; color:var(--dim); padding:6px 0; border-bottom:1px solid var(--border); display:flex; gap:9px; align-items:center; }
+    .si-ul li:last-child { border-bottom:none; }
+    .si-ul li::before { content:''; width:3px; height:3px; border-radius:50%; background:var(--gold-400); flex-shrink:0; }
+
+    /* BOT DETAILS */
+    .dets { margin-bottom:100px; }
+    .det { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; margin-bottom:64px; padding-bottom:64px; border-bottom:1px solid var(--border); }
+    .det:last-child { border-bottom:none; margin-bottom:0; }
+    .det.rev .dvis { order:2; }
+    .det.rev .dtx  { order:1; }
+    @media(max-width:760px){ .det,.det.rev{grid-template-columns:1fr;gap:28px;} .det.rev .dvis,.det.rev .dtx{order:unset;} }
+
+    .dvis { border-radius:var(--r); border:1px solid var(--border); background:var(--ink-3); padding:36px 32px; position:relative; overflow:hidden; }
+    .dvis::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 65% 35%, var(--vg) 0%,transparent 65%); opacity:.2; pointer-events:none; }
+    .dvt { font-family:'JetBrains Mono',monospace; font-size:.68rem; letter-spacing:.18em; text-transform:uppercase; color:var(--col2); margin-bottom:24px; position:relative; z-index:1; display:flex; align-items:center; gap:10px; }
+    .dvt::before { content:''; width:6px; height:6px; border-radius:50%; background:var(--col2); box-shadow:0 0 8px var(--col2); animation:pulse 2s ease-in-out infinite; }
+    .dcaps { display:grid; grid-template-columns:1fr 1fr; gap:10px; position:relative; z-index:1; }
+    .dcap { background:rgba(255,255,255,.04); border:1px solid var(--border); border-radius:8px; padding:14px; transition:border-color .25s,background .25s; }
+    .dcap:hover { border-color:var(--col2); background:rgba(255,255,255,.06); }
+    .dcap-i { font-size:1.3rem; margin-bottom:6px; }
+    .dcap-t { font-family:'Syne',sans-serif; font-size:.78rem; font-weight:700; color:#fff; margin-bottom:2px; }
+    .dcap-d { font-size:.72rem; line-height:1.55; color:var(--dim); }
+
+    .dtx { display:flex; flex-direction:column; }
+    .dtx .dbadge { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:.62rem; letter-spacing:.15em; text-transform:uppercase; padding:4px 12px; border-radius:3px; margin-bottom:14px; background:rgba(255,255,255,.04); border:1px solid var(--col2); color:var(--col2); align-self:flex-start; }
+    .dtx h3 { font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:600; color:#fff; margin-bottom:16px; }
+    .dtx p { font-size:.93rem; line-height:1.85; color:var(--dim); margin-bottom:14px; }
+    .dtx ul { list-style:none; margin-bottom:24px; flex:1; }
+    .dtx ul li { font-size:.88rem; color:var(--dim); padding:8px 0; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; }
+    .dtx ul li::before { content:''; width:4px; height:4px; border-radius:50%; flex-shrink:0; background:var(--col2); box-shadow:0 0 6px var(--col2); }
+    .bdet { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; box-sizing:border-box; padding:17px 24px; border-radius:var(--rs); font-family:'Syne',sans-serif; font-size:1rem; font-weight:700; text-decoration:none; border:1px solid var(--col2); color:var(--col2); background:rgba(255,255,255,.02); position:relative; overflow:hidden; transition:all .25s; margin-top:auto; }
+    .bdet::before { content:''; position:absolute; inset:0; background:var(--col2); opacity:0; transition:opacity .25s; }
+    .bdet:hover::before { opacity:.09; }
+    .bdet:hover { box-shadow:0 0 24px -4px var(--col2); }
+    .bdet > * { position:relative; z-index:1; }
+    .bdet svg { width:16px; height:16px; fill:currentColor; }
+
+    /* HOW */
+    .how { margin-bottom:100px; }
+    .steps { display:grid; grid-template-columns:repeat(4,1fr); gap:0; position:relative; margin-top:56px; }
+    .steps::before { content:''; position:absolute; top:27px; left:12%; right:12%; height:1px; background:linear-gradient(90deg,transparent,var(--brgold),var(--brgold),transparent); }
+    @media(max-width:760px){ .steps{grid-template-columns:1fr 1fr;} .steps::before{display:none;} }
+    @media(max-width:460px){ .steps{grid-template-columns:1fr;} }
+    .step { text-align:center; padding:0 18px; position:relative; z-index:1; }
+    .snum { width:54px; height:54px; margin:0 auto 20px; border-radius:50%; background:var(--ink-3); border:1px solid var(--brgold); display:grid; place-items:center; font-family:'Cormorant Garamond',serif; font-size:1.4rem; font-weight:600; color:var(--gold-300); }
+    .st2 { font-family:'Syne',sans-serif; font-size:.9rem; font-weight:700; color:#fff; margin-bottom:8px; }
+    .sd { font-size:.83rem; line-height:1.7; color:var(--dim); }
+
+    /* USE CASES */
+    .cases { margin-bottom:100px; }
+    .cg { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:48px; }
+    @media(max-width:760px){ .cg{grid-template-columns:1fr 1fr;} }
+    @media(max-width:460px){ .cg{grid-template-columns:1fr;} }
+    .ci { border:1px solid var(--border); border-radius:var(--rs); background:var(--surface); padding:24px; transition:all .25s; }
+    .ci:hover { border-color:var(--brgold); background:rgba(200,146,42,.025); }
+    .ci-i { font-size:2rem; margin-bottom:10px; display:block; }
+    .ci-t { font-family:'Syne',sans-serif; font-size:.9rem; font-weight:700; color:#fff; margin-bottom:7px; }
+    .ci-d { font-size:.82rem; line-height:1.7; color:var(--dim); }
+
+    /* COMPARE */
+    .comp { margin-bottom:100px; }
+    .twrap { border:1px solid var(--border); border-radius:var(--r); overflow:hidden; margin-top:48px; overflow-x:auto; }
+    table { width:100%; border-collapse:collapse; min-width:520px; }
+    thead tr { background:var(--ink-3); }
+    thead th { font-family:'JetBrains Mono',monospace; font-size:.68rem; letter-spacing:.12em; text-transform:uppercase; padding:18px 22px; text-align:left; color:var(--dim); border-bottom:1px solid var(--border); }
+    thead th:first-child { color:var(--gold-300); }
+    tbody tr { border-bottom:1px solid var(--border); transition:background .2s; }
+    tbody tr:last-child { border-bottom:none; }
+    tbody tr:hover { background:rgba(255,255,255,.018); }
+    tbody td { padding:15px 22px; font-size:.88rem; color:var(--dim); }
+    tbody td:first-child { color:var(--text); font-weight:600; font-family:'Syne',sans-serif; }
+    .ck { color:var(--hc); } .ck2 { color:var(--sc); } .ck3 { color:var(--fc); } .cx { color:var(--mut); } .cp { color:var(--gold-400); }
+
+    /* FAQ ACCORDION */
+    .faq { margin-bottom:100px; }
+    .fgrid { display:flex; flex-direction:column; gap:0; margin-top:48px; border:1px solid var(--border); border-radius:var(--r); overflow:hidden; }
+    .fitem { border-bottom:1px solid var(--border); }
+    .fitem:last-child { border-bottom:none; }
+    .fq {
+      font-family:'Syne',sans-serif; font-size:.93rem; font-weight:700; color:#fff;
+      padding:20px 24px; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:16px;
+      transition:background .2s; user-select:none;
+    }
+    .fq:hover { background:rgba(255,255,255,.02); }
+    .fq.open { color:var(--gold-300); background:rgba(200,146,42,.04); }
+    .fq-ico {
+      width:22px; height:22px; flex-shrink:0;
+      border:1px solid var(--border); border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      font-size:.75rem; color:var(--dim);
+      transition:transform .3s, border-color .2s, color .2s;
+    }
+    .fq.open .fq-ico { transform:rotate(45deg); border-color:var(--gold-400); color:var(--gold-400); }
+    .fa-wrap { max-height:0; overflow:hidden; transition:max-height .38s cubic-bezier(.16,1,.3,1); }
+    .fa-wrap.open { max-height:300px; }
+    .fa { font-size:.88rem; line-height:1.75; color:var(--dim); padding:0 24px 20px; }
+
+    /* CTA */
+    .cta { border-radius:var(--r); border:1px solid var(--brgold); background:linear-gradient(135deg,rgba(200,146,42,.06) 0%,rgba(45,255,196,.04) 100%); padding:64px 48px; text-align:center; position:relative; overflow:hidden; margin-bottom:100px; }
+    .cta::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 80% 70% at 50% 50%,rgba(200,146,42,.07) 0%,transparent 70%); pointer-events:none; }
+    .cta h2 { font-family:'Cormorant Garamond',serif; font-size:clamp(1.8rem,4vw,3rem); font-weight:300; color:#fff; margin-bottom:14px; position:relative; z-index:1; }
+    .cta h2 strong { font-weight:700; color:var(--gold-300); }
+    .cta p { font-size:.98rem; color:var(--dim); margin-bottom:36px; position:relative; z-index:1; }
+    .ctabs { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; position:relative; z-index:1; }
+    .bgold { display:inline-flex; align-items:center; gap:9px; padding:14px 32px; border-radius:8px; font-family:'Syne',sans-serif; font-size:.88rem; font-weight:700; text-decoration:none; background:linear-gradient(135deg,var(--gold-400),var(--gold-600)); color:var(--ink); border:none; box-shadow:0 4px 24px rgba(200,146,42,.28); transition:all .25s; }
+    .bgold:hover { transform:translateY(-2px); box-shadow:0 8px 32px rgba(200,146,42,.42); }
+    .bogold { display:inline-flex; align-items:center; gap:9px; padding:14px 32px; border-radius:8px; font-family:'Syne',sans-serif; font-size:.88rem; font-weight:700; text-decoration:none; background:transparent; color:var(--gold-300); border:1px solid var(--brgold); transition:all .25s; }
+    .bogold:hover { background:rgba(200,146,42,.1); }
+
+    /* FOOTER */
+    footer { border-top:1px solid var(--border); padding:56px 40px; position:relative; z-index:1; }
+    .fin { max-width:1280px; margin:0 auto; display:grid; grid-template-columns:2fr 1fr 1fr; gap:48px; }
+    @media(max-width:720px){ .fin{grid-template-columns:1fr;gap:28px;} }
+    .fbr { font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:700; color:var(--gold-300); margin-bottom:10px; }
+    .fbs { font-size:.87rem; line-height:1.75; color:var(--dim); max-width:340px; }
+    .fct { font-family:'JetBrains Mono',monospace; font-size:.65rem; letter-spacing:.2em; text-transform:uppercase; color:var(--mut); margin-bottom:16px; }
+    .fls { list-style:none; display:flex; flex-direction:column; gap:8px; }
+    .fls a { font-size:.87rem; color:var(--dim); text-decoration:none; transition:color .2s; }
+    .fls a:hover { color:var(--gold-300); }
+    .fbot { max-width:1280px; margin:36px auto 0; padding-top:22px; border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; }
+    .fcp { font-family:'JetBrains Mono',monospace; font-size:.65rem; letter-spacing:.1em; color:var(--mut); }
+    .flg { font-family:'JetBrains Mono',monospace; font-size:.62rem; color:var(--mut); max-width:480px; text-align:right; line-height:1.7; }
+    @media(max-width:560px){ .flg{text-align:left;} }
+
+    /* hidden until API resolves */
+    .bot-hidden { display:none !important; }
+  </style>
 </head>
-  <body class="bg-black">
-    <div id="root"></div>
-  </body>
-</html>
+<body>
 
+<nav>
+  <a href="#" class="nav-logo">Probiv<span>.Search</span></a>
+  <ul class="nav-links">
+    <li><a href="#bots">Боты</a></li>
+    <li><a href="#about">Возможности</a></li>
+    <li><a href="#how">Как работает</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a id="nav-cta" href="#bots" class="nav-cta">↓ Выбрать бота</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="bots" data-aos="fade-up" data-aos-duration="600">
+  <div class="hero-kicker">OSINT-поиск в Telegram — 3 профессиональных инструмента</div>
+  <h1 class="ht">
+    Найти информацию<br><em>о любом человеке</em><br><strong>за минуту</strong>
+  </h1>
+  <p class="hero-sub">
+    Три специализированных Telegram-бота для поиска по открытым источникам. Himera Search, Sherlock и Funstat — каждый решает свою задачу.
+  </p>
+</section>
+
+<!-- BOT CARDS -->
+<div class="bs">
+  <div class="bg" id="cards-grid">
+    <!-- Himera card -->
+    <div class="bc bch" data-bot-block="himera" data-aos="fade-up" data-aos-delay="0">
+      <div class="bc-bar"></div>
+      <div class="bc-feat">Топ выбор</div>
+      <div class="bc-head">
+        <div class="bc-ico">🔭</div>
+        <div class="bc-name"><h3>Himera Search</h3><div class="bc-handle" data-bot-handle="himera"></div></div>
+      </div>
+      <p class="bc-desc">9000+ баз данных и 9 млрд записей. Пробив по телефону, ФИО, email, ИНН, авто. Доходы, имущество, задолженности, правонарушения.</p>
+      <div class="bc-tags">
+        <span class="bc-tag">Телефон</span><span class="bc-tag">ФИО + ДР</span><span class="bc-tag">Email</span><span class="bc-tag">ИНН</span><span class="bc-tag">Авто / VIN</span><span class="bc-tag">Утечки</span>
+      </div>
+      <a class="btg" data-bot-link="himera" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.93.43l-2.6-1.92-1.25 1.2c-.14.14-.26.26-.53.26l.19-2.66 4.84-4.37c.21-.19-.05-.29-.32-.1L8.24 14.6l-2.54-.79c-.55-.17-.56-.55.12-.82l9.96-3.84c.46-.17.86.11.86.65z"/></svg>
+        Открыть Himera Search
+      </a>
+    </div>
+
+    <!-- Sherlock card -->
+    <div class="bc bcs" data-bot-block="sherlock" data-aos="fade-up" data-aos-delay="80">
+      <div class="bc-bar"></div>
+      <div class="bc-head">
+        <div class="bc-ico">🕵️</div>
+        <div class="bc-name"><h3>Sherlock</h3><div class="bc-handle" data-bot-handle="sherlock"></div></div>
+      </div>
+      <p class="bc-desc">Поиск аккаунтов в 400+ платформах, пробив по телефону и email, проверка утечек, перекрёстный анализ и история профиля.</p>
+      <div class="bc-tags">
+        <span class="bc-tag">Никнейм</span><span class="bc-tag">Телефон</span><span class="bc-tag">Email</span><span class="bc-tag">400+ платформ</span><span class="bc-tag">Утечки</span>
+      </div>
+      <a class="btg" data-bot-link="sherlock" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.93.43l-2.6-1.92-1.25 1.2c-.14.14-.26.26-.53.26l.19-2.66 4.84-4.37c.21-.19-.05-.29-.32-.1L8.24 14.6l-2.54-.79c-.55-.17-.56-.55.12-.82l9.96-3.84c.46-.17.86.11.86.65z"/></svg>
+        Открыть Sherlock
+      </a>
+    </div>
+
+    <!-- Funstat card -->
+    <div class="bc bcf" data-bot-block="funstat" data-aos="fade-up" data-aos-delay="160">
+      <div class="bc-bar"></div>
+      <div class="bc-head">
+        <div class="bc-ico">📊</div>
+        <div class="bc-name"><h3>Funstat</h3><div class="bc-handle" data-bot-handle="funstat"></div></div>
+      </div>
+      <p class="bc-desc">Глубокий анализ Telegram-аккаунтов. История ников и аватаров, сообщения из публичных чатов, активность, устройство.</p>
+      <div class="bc-tags">
+        <span class="bc-tag">История ников</span><span class="bc-tag">Публичные чаты</span><span class="bc-tag">Активность</span><span class="bc-tag">Устройство</span>
+      </div>
+      <a class="btg" data-bot-link="funstat" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.93.43l-2.6-1.92-1.25 1.2c-.14.14-.26.26-.53.26l.19-2.66 4.84-4.37c.21-.19-.05-.29-.32-.1L8.24 14.6l-2.54-.79c-.55-.17-.56-.55.12-.82l9.96-3.84c.46-.17.86.11.86.65z"/></svg>
+        Открыть Funstat
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="gdiv"><hr></div>
+
+<!-- ABOUT / OSINT -->
+<div class="cw" id="about">
+  <section class="feats">
+    <div class="fh" data-aos="fade-up">
+      <div class="sl">Что такое OSINT-поиск</div>
+      <h2 class="st">Разведка на основе<br><em>открытых источников</em></h2>
+      <div class="sb">
+        <p><strong>OSINT (Open Source Intelligence)</strong> — методология сбора и анализа информации из публично доступных источников. Наши боты автоматизируют этот процесс: вместо часов ручной работы вы получаете агрегированный отчёт за секунды прямо в Telegram.</p>
+        <p>Himera Search объединяет <strong>более 9000 актуальных баз данных</strong> с 9 миллиардами записей — социальные сети, открытые реестры, базы утечек. Sherlock и Funstat дополняют его специализированными инструментами.</p>
+      </div>
+    </div>
+    <div class="fg">
+      <div class="fi" data-aos="fade-up" data-aos-delay="0"><div class="fi-n">01</div><div class="fi-t">9000+ баз данных</div><div class="fi-d">Himera Search агрегирует данные из более чем 9000 актуальных источников — утечки, соцсети, государственные реестры, открытые базы.</div></div>
+      <div class="fi" data-aos="fade-up" data-aos-delay="70"><div class="fi-n">02</div><div class="fi-t">Мгновенный результат</div><div class="fi-d">Средний срок обработки запроса — около 1 минуты. Сотни источников проверяются параллельно, результат приходит в Telegram.</div></div>
+      <div class="fi" data-aos="fade-up" data-aos-delay="140"><div class="fi-n">03</div><div class="fi-t">Перекрёстный анализ</div><div class="fi-d">Сервис сам находит связи между активностью номера телефона и живым человеком, сопоставляет данные из разных источников автоматически.</div></div>
+      <div class="fi" data-aos="fade-up" data-aos-delay="0"><div class="fi-n">04</div><div class="fi-t">Скачиваемый отчёт</div><div class="fi-d">Все результаты Himera Search — в структурированном отчёте, который можно скачать в удобном формате. Открытые и конфиденциальные данные.</div></div>
+      <div class="fi" data-aos="fade-up" data-aos-delay="70"><div class="fi-n">05</div><div class="fi-t">Конфиденциальность</div><div class="fi-d">Ваши запросы хранятся в личном кабинете и не передаются третьим лицам. Круглосуточный API-доступ для корпоративных клиентов.</div></div>
+      <div class="fi" data-aos="fade-up" data-aos-delay="140"><div class="fi-n">06</div><div class="fi-t">Гибкие тарифы</div><div class="fi-d">Базовое использование — без регистрации. Пакеты запросов со скидкой до 65%, единая цена на все типы запросов, без ограничений по сроку.</div></div>
+    </div>
+  </section>
+</div>
+
+<!-- SEARCH TYPES -->
+<div class="cw">
+  <section class="stypes">
+    <div data-aos="fade-up">
+      <div class="sl">Типы поиска Himera Search</div>
+      <h2 class="st">Что можно<br><em>найти и пробить</em></h2>
+    </div>
+    <div class="sg">
+      <div class="si" data-aos="fade-up" data-aos-delay="0">
+        <div class="si-head"><span class="si-em">👤</span><span class="si-t">По ФИО и дате рождения</span></div>
+        <ul class="si-ul">
+          <li>Адреса проживания</li><li>Номера телефонов</li><li>Доходы, имущество, задолженности</li><li>Правонарушения и штрафы</li><li>Связанные лица и организации</li>
+        </ul>
+      </div>
+      <div class="si" data-aos="fade-up" data-aos-delay="80">
+        <div class="si-head"><span class="si-em">📱</span><span class="si-t">По номеру телефона</span></div>
+        <ul class="si-ul">
+          <li>Владелец номера (ФИО)</li><li>Как записан в чужих телефонных книгах</li><li>Место работы</li><li>Адреса, аккаунты в соцсетях</li><li>Telegram и другие мессенджеры</li>
+        </ul>
+      </div>
+      <div class="si" data-aos="fade-up" data-aos-delay="0">
+        <div class="si-head"><span class="si-em">🚗</span><span class="si-t">По гос. номеру и VIN авто</span></div>
+        <ul class="si-ul">
+          <li>Имя, фамилия и телефон владельца</li><li>Марка, модель, год выпуска</li><li>История ДТП и ремонтов</li><li>Регистрация в ГИБДД, розыск</li><li>Место парковки по открытым данным</li>
+        </ul>
+      </div>
+      <div class="si" data-aos="fade-up" data-aos-delay="80">
+        <div class="si-head"><span class="si-em">🏢</span><span class="si-t">По ИНН (физлицо и юрлицо)</span></div>
+        <ul class="si-ul">
+          <li>Данные владельцев и контакты</li><li>Арбитраж, банкротство, долги</li><li>Список сотрудников</li><li>Статус ИП, самозанятого, ЮЛ</li><li>Дисквалификации и ограничения</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- BOT DETAILS -->
+<div class="cw">
+  <div class="dets">
+    <div class="sl" data-aos="fade-up">Подробно о каждом боте</div>
+
+    <!-- HIMERA DETAIL -->
+    <article class="det" data-bot-block="himera" data-aos="fade-up" data-aos-duration="800" style="--col2:var(--hc);">
+      <div class="dvis" style="--vg:rgba(45,255,196,.6);">
+        <div class="dvt">Himera Search — возможности</div>
+        <div class="dcaps">
+          <div class="dcap"><div class="dcap-i">📂</div><div class="dcap-t">9000+ баз</div><div class="dcap-d">Актуальные базы данных, обновляются регулярно</div></div>
+          <div class="dcap"><div class="dcap-i">🔗</div><div class="dcap-t">Связи</div><div class="dcap-d">Автоматическое построение связей между данными</div></div>
+          <div class="dcap"><div class="dcap-i">📄</div><div class="dcap-t">Отчёт PDF</div><div class="dcap-d">Скачать в удобном формате с полной детализацией</div></div>
+          <div class="dcap"><div class="dcap-i">⚡</div><div class="dcap-t">~1 минута</div><div class="dcap-d">Среднее время обработки любого запроса</div></div>
+          <div class="dcap"><div class="dcap-i">🛡️</div><div class="dcap-t">Реестры РФ</div><div class="dcap-d">ФМС, ФССП, ФСИН, налоговая, розыск</div></div>
+          <div class="dcap"><div class="dcap-i">🔌</div><div class="dcap-t">API</div><div class="dcap-d">Интеграция в свою систему с документацией</div></div>
+        </div>
+      </div>
+      <div class="dtx">
+        <div class="dbadge">✦ Рекомендуемый бот</div>
+        <h3>Himera Search — флагман OSINT</h3>
+        <p>Наиболее полный инструмент: <strong>9000+ баз данных</strong>, 9 млрд записей. Поиск по ФИО, телефону, email, ИНН, паспорту, авто. Результат — полный отчёт за ~1 минуту.</p>
+        <ul>
+          <li>Пробив по телефону — ФИО, адрес, соцсети, место работы</li>
+          <li>Поиск по ФИО — телефоны, доходы, имущество, задолженности</li>
+          <li>Проверка авто — владелец, ДТП, ГИБДД, розыск</li>
+          <li>Поиск по ИНН — арбитраж, сотрудники, банкротство</li>
+          <li>Проверка по открытым реестрам РФ (ФМС, ФССП, налоговая)</li>
+          <li>Скидка до 65% при покупке пакета запросов</li>
+          <li>API для корпоративной интеграции</li>
+        </ul>
+        <a class="bdet" data-bot-link="himera" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.93.43l-2.6-1.92-1.25 1.2c-.14.14-.26.26-.53.26l.19-2.66 4.84-4.37c.21-.19-.05-.29-.32-.1L8.24 14.6l-2.54-.79c-.55-.17-.56-.55.12-.82l9.96-3.84c.46-.17.86.11.86.65z"/></svg>
+          Запустить Himera Search
+        </a>
+      </div>
+    </article>
+
+    <!-- SHERLOCK DETAIL -->
+    <article class="det rev" data-bot-block="sherlock" data-aos="fade-up" data-aos-duration="800" style="--col2:var(--sc);">
+      <div class="dvis" style="--vg:rgba(167,139,250,.6);">
+        <div class="dvt">Sherlock — возможности</div>
+        <div class="dcaps">
+          <div class="dcap"><div class="dcap-i">🔍</div><div class="dcap-t">400+ платформ</div><div class="dcap-d">Одновременная проверка сотен сайтов по никнейму</div></div>
+          <div class="dcap"><div class="dcap-i">📱</div><div class="dcap-t">Пробив телефона</div><div class="dcap-d">ФИО, соцсети, место работы по номеру</div></div>
+          <div class="dcap"><div class="dcap-i">✉️</div><div class="dcap-t">Поиск по email</div><div class="dcap-d">Связанные аккаунты и источники по адресу почты</div></div>
+          <div class="dcap"><div class="dcap-i">💧</div><div class="dcap-t">Утечки данных</div><div class="dcap-d">Проверка попадания в известные базы утечек</div></div>
+          <div class="dcap"><div class="dcap-i">🔀</div><div class="dcap-t">Перекрёстный</div><div class="dcap-d">Автоматическое сопоставление данных из разных источников</div></div>
+          <div class="dcap"><div class="dcap-i">📜</div><div class="dcap-t">История профиля</div><div class="dcap-d">Прошлые никнеймы, изменения данных, аналитика</div></div>
+        </div>
+      </div>
+      <div class="dtx">
+        <div class="dbadge">Многофункциональный OSINT</div>
+        <h3>Sherlock — полный OSINT-анализ</h3>
+        <p>Поиск аккаунтов по никнейму в 400+ платформах, пробив по телефону и email, анализ утечек. Строит перекрёстные связи и показывает историю профиля.</p>
+        <ul>
+          <li>Поиск аккаунтов по никнейму в 400+ платформах</li>
+          <li>Поиск по номеру телефона</li>
+          <li>Поиск по email-адресу</li>
+          <li>Проверка по базам утечек данных</li>
+          <li>Перекрёстный анализ и построение связей</li>
+          <li>История профиля — прошлые никнеймы и изменения</li>
+          <li>Аналитика активности аккаунта</li>
+        </ul>
+        <a class="bdet" data-bot-link="sherlock" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.93.43l-2.6-1.92-1.25 1.2c-.14.14-.26.26-.53.26l.19-2.66 4.84-4.37c.21-.19-.05-.29-.32-.1L8.24 14.6l-2.54-.79c-.55-.17-.56-.55.12-.82l9.96-3.84c.46-.17.86.11.86.65z"/></svg>
+          Запустить Sherlock
+        </a>
+      </div>
+    </article>
+
+    <!-- FUNSTAT DETAIL -->
+    <article class="det" data-bot-block="funstat" data-aos="fade-up" data-aos-duration="800" style="--col2:var(--fc);">
+      <div class="dvis" style="--vg:rgba(251,146,60,.6);">
+        <div class="dvt">Funstat — возможности</div>
+        <div class="dcaps">
+          <div class="dcap"><div class="dcap-i">🏷️</div><div class="dcap-t">История ников</div><div class="dcap-d">Все предыдущие имена и username аккаунта</div></div>
+          <div class="dcap"><div class="dcap-i">💬</div><div class="dcap-t">Публичные чаты</div><div class="dcap-d">Сообщения пользователя из публичных Telegram-чатов</div></div>
+          <div class="dcap"><div class="dcap-i">🖼️</div><div class="dcap-t">История аватаров</div><div class="dcap-d">Прошлые фото профиля с временными метками</div></div>
+          <div class="dcap"><div class="dcap-i">🕐</div><div class="dcap-t">Активность</div><div class="dcap-d">Паттерны онлайна, типичное время в сети</div></div>
+          <div class="dcap"><div class="dcap-i">📱</div><div class="dcap-t">Устройство</div><div class="dcap-d">Тип устройства: iOS, Android или Desktop</div></div>
+          <div class="dcap"><div class="dcap-i">📋</div><div class="dcap-t">Bio и имя</div><div class="dcap-d">Текущее и прошлые описания профиля (bio)</div></div>
+        </div>
+      </div>
+      <div class="dtx">
+        <div class="dbadge">Telegram-аналитика</div>
+        <h3>Funstat — глубокий анализ Telegram</h3>
+        <p>Глубокий анализ Telegram-аккаунтов: история ников и аватаров, сообщения из публичных чатов, паттерны онлайна, тип устройства. Помогает установить личность анонима.</p>
+        <ul>
+          <li>История всех никнеймов (username) аккаунта</li>
+          <li>Сообщения пользователя из публичных Telegram-чатов</li>
+          <li>История смены аватаров с датами</li>
+          <li>История изменений имени и описания bio</li>
+          <li>Паттерны онлайна и время активности</li>
+          <li>Тип устройства (iOS, Android, Desktop)</li>
+          <li>Дата и условия создания аккаунта</li>
+        </ul>
+        <a class="bdet" data-bot-link="funstat" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.93.43l-2.6-1.92-1.25 1.2c-.14.14-.26.26-.53.26l.19-2.66 4.84-4.37c.21-.19-.05-.29-.32-.1L8.24 14.6l-2.54-.79c-.55-.17-.56-.55.12-.82l9.96-3.84c.46-.17.86.11.86.65z"/></svg>
+          Запустить Funstat
+        </a>
+      </div>
+    </article>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="cw" id="how">
+  <section class="how">
+    <div data-aos="fade-up">
+      <div class="sl">Как пользоваться</div>
+      <h2 class="st">Четыре шага<br><em>до результата</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step" data-aos="fade-up" data-aos-delay="0"><div class="snum">1</div><div class="st2">Открыть бота</div><div class="sd">Нажмите кнопку на этой странице — попадёте напрямую в нужный бот в Telegram. Регистрация не нужна.</div></div>
+      <div class="step" data-aos="fade-up" data-aos-delay="100"><div class="snum">2</div><div class="st2">Нажать /start</div><div class="sd">Запустите бота командой /start и следуйте инструкциям в чате.</div></div>
+      <div class="step" data-aos="fade-up" data-aos-delay="200"><div class="snum">3</div><div class="st2">Отправить запрос</div><div class="sd">Введите телефон, ФИО, email, ИНН, гос. номер авто или никнейм — в зависимости от выбранного бота.</div></div>
+      <div class="step" data-aos="fade-up" data-aos-delay="300"><div class="snum">4</div><div class="st2">Получить отчёт</div><div class="sd">Через ~1 минуту получите структурированный отчёт. Himera позволяет скачать его в удобном формате.</div></div>
+    </div>
+  </section>
+</div>
+
+<!-- USE CASES -->
+<div class="cw">
+  <section class="cases">
+    <div data-aos="fade-up">
+      <div class="sl">Сценарии использования</div>
+      <h2 class="st">Кому нужен<br><em>OSINT-поиск</em></h2>
+    </div>
+    <div class="cg">
+      <div class="ci" data-aos="fade-up" data-aos-delay="0"><span class="ci-i">🛡️</span><div class="ci-t">Защита от мошенников</div><div class="ci-d">Проверьте продавца на Авито, человека из Telegram или нового «инвестора». Мошенники оставляют следы в открытых базах.</div></div>
+      <div class="ci" data-aos="fade-up" data-aos-delay="60"><span class="ci-i">💼</span><div class="ci-t">Проверка контрагентов</div><div class="ci-d">Перед сделкой убедитесь, что партнёр — реальная личность без задолженностей, судимостей и негативной истории.</div></div>
+      <div class="ci" data-aos="fade-up" data-aos-delay="120"><span class="ci-i">👤</span><div class="ci-t">Что о вас знает интернет</div><div class="ci-d">Узнайте, какие ваши данные находятся в открытом доступе. Проверьте, не попали ли вы в базы утечек.</div></div>
+      <div class="ci" data-aos="fade-up" data-aos-delay="0"><span class="ci-i">🚗</span><div class="ci-t">Проверка авто при покупке</div><div class="ci-d">Пробейте гос. номер или VIN: узнайте о ДТП, залоге, реальном владельце и истории регистрации в ГИБДД.</div></div>
+      <div class="ci" data-aos="fade-up" data-aos-delay="60"><span class="ci-i">📰</span><div class="ci-t">Журналистика и расследования</div><div class="ci-d">Верификация источников, поиск контактов, проверка фактов. OSINT — стандартный инструмент журналистов-расследователей.</div></div>
+      <div class="ci" data-aos="fade-up" data-aos-delay="120"><span class="ci-i">🔐</span><div class="ci-t">Информационная безопасность</div><div class="ci-d">Аудит цифрового следа сотрудников и компании. Оценка рисков утечек и доступной информации.</div></div>
+    </div>
+  </section>
+</div>
+
+<!-- COMPARE TABLE -->
+<div class="cw">
+  <section class="comp">
+    <div data-aos="fade-up">
+      <div class="sl">Сравнение инструментов</div>
+      <h2 class="st">Какой бот<br><em>выбрать для задачи</em></h2>
+    </div>
+    <div class="twrap" data-aos="fade-up" data-aos-delay="100">
+      <table>
+        <thead><tr><th>Функция</th><th>Himera Search</th><th>Sherlock</th><th>Funstat</th></tr></thead>
+        <tbody>
+          <tr><td>Поиск по номеру телефона</td><td><span class="ck">✓</span></td><td><span class="ck2">✓</span></td><td><span class="cx">—</span></td></tr>
+          <tr><td>Поиск по ФИО и дате рождения</td><td><span class="ck">✓</span></td><td><span class="cx">—</span></td><td><span class="cx">—</span></td></tr>
+          <tr><td>Поиск по email</td><td><span class="ck">✓</span></td><td><span class="ck2">✓</span></td><td><span class="cx">—</span></td></tr>
+          <tr><td>Поиск по никнейму (400+ платформ)</td><td><span class="cp">◐</span></td><td><span class="ck2">✓</span></td><td><span class="cx">—</span></td></tr>
+          <tr><td>Поиск по ИНН / паспорту / СНИЛС</td><td><span class="ck">✓</span></td><td><span class="cx">—</span></td><td><span class="cx">—</span></td></tr>
+          <tr><td>Проверка авто (гос. номер / VIN)</td><td><span class="ck">✓</span></td><td><span class="cx">—</span></td><td><span class="cx">—</span></td></tr>
+          <tr><td>Проверка утечек данных</td><td><span class="ck">✓</span></td><td><span class="ck2">✓</span></td><td><span class="cx">—</span></td></tr>
+          <tr><td>Перекрёстный анализ / связи</td><td><span class="ck">✓</span></td><td><span class="ck2">✓</span></td><td><span class="cx">—</span></td></tr>
+          <tr><td>Реестры РФ (ФМС, ФССП, налоговая)</td><td><span class="ck">✓</span></td><td><span class="cx">—</span></td><td><span class="cx">—</span></td></tr>
+          <tr><td>История ников и аватаров</td><td><span class="cx">—</span></td><td><span class="ck2">✓</span></td><td><span class="ck3">✓</span></td></tr>
+          <tr><td>Сообщения из публичных чатов TG</td><td><span class="cx">—</span></td><td><span class="cx">—</span></td><td><span class="ck3">✓</span></td></tr>
+          <tr><td>Аналитика активности</td><td><span class="cx">—</span></td><td><span class="ck2">✓</span></td><td><span class="ck3">✓</span></td></tr>
+          <tr><td>Скачиваемый PDF-отчёт</td><td><span class="ck">✓</span></td><td><span class="cx">—</span></td><td><span class="cx">—</span></td></tr>
+          <tr><td>Лучше всего подходит для</td><td>Комплексного пробива</td><td>OSINT по людям</td><td>Анализа Telegram</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+
+<!-- CTA -->
+<div class="cw">
+  <div class="cta" data-aos="fade-up">
+    <h2>Начни прямо сейчас —<br><strong>это займёт 30 секунд</strong></h2>
+    <p>Himera Search: 9000+ баз данных, 9 млрд записей. Без регистрации, результат за ~1 минуту.</p>
+    <div class="ctabs" id="cta-buttons">
+      <!-- populated by JS -->
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="cw" id="faq">
+  <section class="faq">
+    <div data-aos="fade-up">
+      <div class="sl">Часто задаваемые вопросы</div>
+      <h2 class="st">Ответы на<br><em>главные вопросы</em></h2>
+    </div>
+    <div class="fgrid" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="fitem">
+        <div class="fq" onclick="toggleFaq(this)">Как пробить человека по номеру телефона?<span class="fq-ico">+</span></div>
+        <div class="fa-wrap"><div class="fa">Откройте Himera Search в Telegram и отправьте номер. Бот проверит его по 9000+ базам данных — вы получите ФИО владельца, адрес, место работы, аккаунты в соцсетях. Sherlock тоже поддерживает пробив по телефону и дополнит результат перекрёстным анализом.</div></div>
+      </div>
+
+      <div class="fitem">
+        <div class="fq" onclick="toggleFaq(this)">Чем отличаются три бота друг от друга?<span class="fq-ico">+</span></div>
+        <div class="fa-wrap"><div class="fa"><strong>Himera Search</strong> — самый полный: телефон, ФИО, ИНН, авто, паспорт, 9000+ баз, скачиваемый отчёт. <strong>Sherlock</strong> — поиск по никнейму в 400+ платформах плюс анализ утечек, телефон и email. <strong>Funstat</strong> — глубокий анализ Telegram: история ников, публичные сообщения, активность.</div></div>
+      </div>
+
+      <div class="fitem">
+        <div class="fq" onclick="toggleFaq(this)">Сколько баз данных у Himera Search?<span class="fq-ico">+</span></div>
+        <div class="fa-wrap"><div class="fa">Более 9000 актуальных баз данных с общим числом записей свыше 9 миллиардов. Базы регулярно обновляются, добавляются свежие утечки, данные соцсетей и открытых государственных реестров.</div></div>
+      </div>
+
+      <div class="fitem">
+        <div class="fq" onclick="toggleFaq(this)">Что умеет Funstat и для чего он?<span class="fq-ico">+</span></div>
+        <div class="fa-wrap"><div class="fa">Funstat специализируется исключительно на Telegram-аккаунтах: история всех никнеймов, сообщения из публичных чатов, история аватаров с датами, паттерны онлайна, тип устройства (iOS/Android/Desktop). Незаменим для анализа анонимных аккаунтов.</div></div>
+      </div>
+
+      <div class="fitem">
+        <div class="fq" onclick="toggleFaq(this)">Можно ли пробить авто по гос. номеру?<span class="fq-ico">+</span></div>
+        <div class="fa-wrap"><div class="fa">Да, Himera Search поддерживает поиск по государственному номеру и VIN. Вы получите данные владельца, историю ДТП и ремонтов, статус розыска и регистрацию в ГИБДД.</div></div>
+      </div>
+
+      <div class="fitem">
+        <div class="fq" onclick="toggleFaq(this)">Нужна ли регистрация? Это платно?<span class="fq-ico">+</span></div>
+        <div class="fa-wrap"><div class="fa">Для базового использования нужен только Telegram-аккаунт. Регистрация на сайте Himera Search открывает личный кабинет и пакеты со скидкой до 65% (единая цена на все типы запросов, без срока действия).</div></div>
+      </div>
+
+      <div class="fitem">
+        <div class="fq" onclick="toggleFaq(this)">Как быстро приходят результаты?<span class="fq-ico">+</span></div>
+        <div class="fa-wrap"><div class="fa">Средний срок обработки запроса в Himera Search — около 1 минуты. Sherlock при проверке 400+ платформ — до 1–2 минут. Funstat для анализа Telegram-профиля отвечает за 30–60 секунд.</div></div>
+      </div>
+
+      <div class="fitem">
+        <div class="fq" onclick="toggleFaq(this)">Законно ли использовать OSINT-боты?<span class="fq-ico">+</span></div>
+        <div class="fa-wrap"><div class="fa">Боты работают исключительно с публично доступными данными из открытых источников — это законно. Метод применяется журналистами, следователями и специалистами по ИБ. Запрещается использование в незаконных целях согласно пользовательскому соглашению.</div></div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fin">
+    <div>
+      <div class="fbr">Himera Search</div>
+      <p class="fbs">Профессиональные OSINT-инструменты для пробива информации о людях, автомобилях и бизнесе. 9000+ баз данных, 9 млрд записей — Himera Search, Sherlock и Funstat в Telegram.</p>
+    </div>
+    <div>
+      <div class="fct">Боты</div>
+      <ul class="fls" id="footer-bots">
+        <!-- populated by JS -->
+      </ul>
+    </div>
+    <div>
+      <div class="fct">Навигация</div>
+      <ul class="fls">
+        <li><a href="#bots">Боты</a></li>
+        <li><a href="#about">Возможности</a></li>
+        <li><a href="#how">Как работает</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fbot">
+    <div class="fcp">© 2025 Himera Search — OSINT Telegram Bots</div>
+    <div class="flg">Использовать только в законных целях и в соответствии с законодательством вашей страны. Сервис работает с данными из открытых источников.</div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  function toggleFaq(el) {
+    const wrap = el.nextElementSibling;
+    const isOpen = el.classList.contains('open');
+    document.querySelectorAll('.fq.open').forEach(q => {
+      q.classList.remove('open');
+      q.nextElementSibling.classList.remove('open');
+    });
+    if (!isOpen) {
+      el.classList.add('open');
+      wrap.classList.add('open');
+    }
+  }
+
+  AOS.init({ once:true, easing:'ease-out-quart', offset:55, duration:700 });
+
+  // Bot metadata (names, handle prefixes — no URLs)
+  const BOT_META = {
+    himera:   { label: 'Himera Search', handlePrefix: '@HimeraNaitiBot' },
+    sherlock: { label: 'Sherlock',      handlePrefix: '@not_sher_bot'   },
+    funstat:  { label: 'Funstat',       handlePrefix: '@sovunyasovabot' },
+  };
+
+  // CTA button configs per bot key
+  const CTA_CFG = {
+    himera:   { cls: 'bgold', svg: true,  text: 'Открыть Himera Search' },
+    sherlock: { cls: 'bogold', svg: false, text: 'Sherlock →' },
+    funstat:  { cls: 'bogold', svg: false, text: 'Funstat →' },
+  };
+
+  const TG_SVG = `<svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.93.43l-2.6-1.92-1.25 1.2c-.14.14-.26.26-.53.26l.19-2.66 4.84-4.37c.21-.19-.05-.29-.32-.1L8.24 14.6l-2.54-.79c-.55-.17-.56-.55.12-.82l9.96-3.84c.46-.17.86.11.86.65z"/></svg>`;
+
+  // Hide all bot blocks immediately before API responds
+  const ORDER = ['himera', 'sherlock', 'funstat'];
+  ORDER.forEach(key => {
+    document.querySelectorAll(`[data-bot-block="${key}"]`).forEach(el => el.classList.add('bot-hidden'));
+  });
+
+  function applyBots(mirrors) {
+    const ctaContainer = document.getElementById('cta-buttons');
+    const footerBots   = document.getElementById('footer-bots');
+    ctaContainer.innerHTML = '';
+    footerBots.innerHTML   = '';
+
+    ORDER.forEach(key => {
+      const mirror = mirrors[key];
+      const meta   = BOT_META[key];
+
+      if (!mirror || !mirror.startUrl) {
+        // keep hidden
+        return;
+      }
+
+      const url = mirror.startUrl;
+
+      // Show blocks by removing hidden class
+      document.querySelectorAll(`[data-bot-block="${key}"]`).forEach(el => el.classList.remove('bot-hidden'));
+
+      // Set all links
+      document.querySelectorAll(`[data-bot-link="${key}"]`).forEach(el => { el.href = url; });
+
+      // Set handles (derived from URL)
+      const username = url.replace(/^https?:\/\/t\.me\//, '').split('?')[0];
+      document.querySelectorAll(`[data-bot-handle="${key}"]`).forEach(el => { el.textContent = '@' + username; });
+
+      // CTA button
+      const cfg = CTA_CFG[key];
+      const a   = document.createElement('a');
+      a.href    = url;
+      a.target  = '_blank';
+      a.rel     = 'noopener';
+      a.className = cfg.cls;
+      a.innerHTML = (cfg.svg ? TG_SVG : '') + cfg.text;
+      ctaContainer.appendChild(a);
+
+      // Footer link
+      const li = document.createElement('li');
+      const fa = document.createElement('a');
+      fa.href   = url;
+      fa.target = '_blank';
+      fa.rel    = 'noopener';
+      fa.textContent = '@' + username + ' — ' + meta.label;
+      li.appendChild(fa);
+      footerBots.appendChild(li);
+    });
+
+    // Adjust cards grid columns based on visible cards count
+    const allCards    = document.querySelectorAll('#cards-grid > [data-bot-block]');
+    const visibleCount = Array.from(allCards).filter(el => !el.classList.contains('bot-hidden')).length;
+    const grid = document.getElementById('cards-grid');
+    if (visibleCount === 1)      grid.style.gridTemplateColumns = '1fr';
+    else if (visibleCount === 2) grid.style.gridTemplateColumns = '1fr 1fr';
+    else                         grid.style.gridTemplateColumns = '1fr 1fr 1fr';
+  }
+
+  (async () => {
+    try {
+      const res = await fetch('https://deanon.su/api/v2/mirrors/', { signal: AbortSignal.timeout(5000) });
+      if (!res.ok) throw new Error('bad response');
+      const { mirrors } = await res.json();
+      applyBots(mirrors);
+    } catch {
+      // API failed — everything stays hidden, no hardcoded fallback
+      document.getElementById('cta-buttons').innerHTML = '';
+      document.getElementById('footer-bots').innerHTML = '';
+    }
+  })();
+</script>
+</body>
+</html>
